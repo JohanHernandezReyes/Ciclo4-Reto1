@@ -28,7 +28,7 @@ public class ControladorUsers {
     }
     
     @GetMapping("/{email}/{password}")
-    public Optional<Users> BuscarUserX(@PathVariable("email") String email, @PathVariable("password") String password){
+    public Optional<Users> BuscarUserKey(@PathVariable("email") String email, @PathVariable("password") String password){
         return UsersServices.BuscarUserKey(email, password);
     }
    
