@@ -94,7 +94,6 @@ function ValidarUsuario(email){
             if (respuesta == false) {
                 alert("Usuario no existe en la base de datos");
             } else{
-                alert("Usuario ya existe en la base de datos")
                 throw exit;
             }
         }
