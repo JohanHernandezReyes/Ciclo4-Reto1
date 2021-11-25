@@ -93,9 +93,7 @@ function ValidarUsuario(email){
             console.log(respuesta);
             if (respuesta == false) {
                 alert("Usuario no existe en la base de datos");
-            } else{
-                throw exit;
-            }
+            } 
         }
     });
 }
