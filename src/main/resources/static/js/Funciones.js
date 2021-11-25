@@ -51,7 +51,7 @@ function NuevoUsuario() {
 
     let myData = {
         name: $("#name").val(),
-        email: $("#email").val(),
+        email: $("#email").val().toLowerCase(),
         password: $("#password").val(),
     };
     let dataToSend = JSON.stringify(myData);
@@ -76,7 +76,7 @@ function NuevoUsuario() {
 }
 
 function guardarUsuario(){
-    ValidarDuplicado($("#email").val(), ListaUsuarios);
+    ValidarDuplicado($("#email").val().toLowerCase(), ListaUsuarios);
 }
      
 
